@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="miniStore.css"> 
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <title>MiniStore</title>
+</head>
+<body>
+    <div id="all">
+        <nav>
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/main-logo.png" class="logo" alt="Main Logo">
+            </a>
+            <ul>
+                <a href="#" class="active"><li>HOME</li></a>
+                <a href="#"><li>SERVICES</li></a>
+                <a href="#"><li>PRODUCTS</li></a>
+                <a href="#"><li>WATCHES</li></a>
+                <a href="#"><li>SALE</li></a>
+                <a href="#"><li>BLOG</li></a>
+                <a href="#" class="toggle" onclick="disList(); return false;">PAGES</a>
+                <ul id="myList" class="hidden">
+                    <li>ABOUT</li>
+                    <li>BLOG</li>
+                    <li>SHOP</li>
+                    <li>CART</li>
+                    <li>CHECKOUT</li>
+                    <li>SINGLE POST</li>
+                    <li>SINGLE PRODUCT</li>
+                    <li>CONTACT</li>
+                </ul>
+            </ul>
+            <div class="icons">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="nav-res" id="nav-res" onclick="getListNavRes()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <section class="slides" id="slides">
+            <section id="slide1">
+                <div class="head-title">
+                    <h1>YOUR PRODUCTS ARE GREAT</h1>
+                    <button>SHOP PRODUCT</button>
+                </div>
+                <img src="./img/banner-image.png" alt="Banner Image">
+            </section>
+            <section id="slide2">
+                <div class="head-title">
+                    <h1>TECHNOLOGY HACK YOU WON'T GET</h1>
+                    <button>SHOP PRODUCT</button>
+                </div>
+                <img src="./img/banner-image.png" alt="Banner Image">
+            </section>
+            <div class="arrow">
+                <div class="arrow-left" id="left"><i class="fas fa-chevron-left"></i></div>
+                <div class="arrow-right" id="right"><i class="fas fa-chevron-right"></i></div>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="content">
+                <div><i class="fa-solid fa-cart-shopping"></i></div>
+                <div>
+                    <h3>Free delivery</h3>
+                    <p>Consectetur adipi elit lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="content">
+                <div><i class="fa-regular fa-star"></i></div>
+                <div>
+                    <h3>Quality guarantee</h3>
+                    <p>Dolor sit amet orem ipsu mcons ectetur adipi elit.</p>
+                </div>
+            </div>
+            <div class="content">
+                <div><i class="fa-solid fa-tag"></i></div>
+                <div>
+                    <h3>Daily offers</h3>
+                    <p>Amet consectetur adipi elit loreme ipsum dolor sit.</p>
+                </div>
+            </div>
+            <div class="content">
+                <div><i class="fa-solid fa-shield"><span>+</span></i></div>
+                <div>
+                    <h3>100% secure payment</h3>
+                    <p>Rem Lopsum dolor sit amet, consectetur adipi elit.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="content3">
+            <div class="title-content3">
+                <h3>MOBILE PRODUCTS</h3>
+                <a href="#">GO TO SHOP</a>
+            </div>
+            <div class="slideshow-container">
+                <div class="slide">
+                    <div class="card">
+                        <img src="./img/product-item1.jpg" alt="product-item1">
+                        <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button>
+                        <div>
+                            <a href="#">IPHONE 10</a>
+                            <p>980$</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/product-item2.jpg" alt="product-item2">
+                        <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button>
+                        <div>
+                            <a href="#">IPHONE 11</a>
+                            <p>1100$</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/product-item3.jpg" alt="product-item3">
+                        <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button></button>
+                        <div>
+                            <a href="#">IPHONE 8</a>
+                            <p>780$</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/product-item4.jpg" alt="product-item4">
+                        <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button>
+                        <div>
+                            <a href="#">IPHONE 13</a>
+                            <p>1500$</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/product-item5.jpg" alt="product-item5">
+                        <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button>
+                        <div>
+                            <a href="#">IPHONE 12</a>
+                            <p>1300$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ball">
+                <div id="ball1" class="active"></div>
+                <div id="ball2"></div>
+                <div id="ball3"></div>
+                <div id="ball4"></div>
+            </div>
+        </section>
+
+        <section class="content3">
+            <div class="title-content3">
+                <h3>MOBILE PRODUCTS</h3>
+                <a href="#">GO TO SHOP</a>
+            </div>
+            <div class="slideshow-container">
+                <div class="slide2">
+                    <div class="card">
+                        <img src="./img/product-item6.jpg" alt="product-item1">
+                        <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button>
+                        <div>
+                            <a href="#">HEAVY WATCH</a>
+                            <p>680$</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/product-item7.jpg" alt="product-item1">
+                        <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button>
+                        <div>
+                            <a href="#">PINK WATCH</a>
+                            <p>870$</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/product-item8.jpg" alt="product-item3">
+                        <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button>
+                        <div>
+                            <a href="#">BLACK WATCH</a>
+                            <p>650$</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/product-item9.jpg" alt="product-item5">
+                        <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button>
+                        <div>
+                            <a href="#">BLACK WATCH</a>
+                            <p>750$</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/product-item10.jpg" alt="product-item2">
+                        <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button>
+                        <div>
+                            <a href="#">SPOTTED WATCH</a>
+                            <p>750$</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="./img/product-item6.jpg" alt="product-item2">
+                        <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button>
+                        <div>
+                            <a href="#">IPHONE 11</a>
+                            <p>1100$</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/product-item7.jpg" alt="product-item3">
+                        <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button>
+                        <div>
+                            <a href="#">IPHONE 8</a>
+                            <p>780$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ball2">
+                <div id="ball5" class="active"></div>
+                <div id="ball6"></div>
+                <div id="ball7"></div>
+                <div id="ball8"></div>
+            </div>
+        </section>
+
+        <section class="section4">
+            <div>
+                <p>10% off</p>
+                <h1>NEW YEAR SALE</h1>
+                <button>SHOP SALE</button>
+            </div>
+            <img src="./img/single-image1.png" alt="Banner Image">
+        </section>
+        
+
+        <section class="section5">
+            <div class="title-section5">
+                <h3>LATEST POST</h3>
+                <a href="#">READ BLOG</a>
+            </div>
+            <div class="card-sec5">
+                <img src="./img/post-item1.jpg" alt="post">
+                <p>FEB 22, 2023 - GADGETS</p>
+                <a>GET SOME COOL GADGETS IN 2023</a>
+            </div>
+            <div class="card-sec5">
+                <img src="./img/post-item2.jpg" alt="post">
+                <p>FEB 25, 2023 - TECHNOLOGY</p>
+                <a href="#">TECHNOLOGY HACK YOU WON'T GET</a>
+            </div>
+            <div class="card-sec5">
+                <img src="./img/post-item3.jpg" alt="post">
+                <p>FEB 22, 2023 - CAMERA</p>
+                <a href="#">TOP 1O SMALL CAMERA IN THE WORLD</a>
+            </div>
+        </section>
+
+
+        <section class="sec6">
+            <div class="qout"><i class="fa-solid fa-quote-right"></i></div>
+            <p>“A blog is a digital publication that can complement a website or exist independently. A blog may include articles, short posts, listicles, infographics, videos, and other digital content.”</p>
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <span>Jennie Rose</span>
+        </section>
+
+
+        <section class="sec7">
+            <div>
+                <h2>SUBSCRIBE US NOW</h2>
+                <P>Get latest news, updates and deals directly mailed to your inbox.</P>
+            </div>
+            <div class="inbtn">
+                <input type="text" placeholder="Your Email Address here">
+                <button>SUBSCRIBE</button>
+            </div>
+        </section>
+
+
+        <section class="sec8">
+            <h2>SHOP OUR INSTA</h2>
+            <div>
+                <img src="img/insta-item1.jpg" alt="img">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+                <img src="img/insta-item2.jpg" alt="img">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+                <img src="img/insta-item3.jpg" alt="img">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+                <img src="img/insta-item4.jpg" alt="img">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+                <img src="img/insta-item5.jpg" alt="img">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            
+        </section>
+
+
+        <section class="sec9">
+            <div>
+                <img src="img/main-logo.png" alt="logo">
+                <p>Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio erat nullam fringilla.</p>
+                <div class="icons-sec9">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <a href="#" class="active"><li>HOME</li></a>
+                <a href="#"><li>ABOUT</li></a>
+                <a href="#"><li>SHOP</li></a>
+                <a href="#"><li>BLOG</li></a>
+                <a href="#"><li>CONTANT</li></a>
+                </ul>
+            </div>
+            <div>
+                <h3>HELP & INFO HELP</h3>
+                <div class="link-sec9">
+                    <a href="#">TRACK YOUR ORDER</a>
+                <a href="#">RETURNS POLICIES</a>
+                <a href="#">SHIPPING+DELIVRY</a>
+                <a href="#">CONTACT US</a>
+                <a href="#">FAQUS</a>
+                </div>
+            </div>
+            <div>
+                <h3>CONTACT US</h3>
+                <P style="  margin-top: 5%;">Do you have any queries or suggestions?<a href="mailto:">yourinfo@gmail.com</a></P>
+                <p style="  margin-top: 7%;">If you need support? Just give us a call. <a href="#">+55 111 222 333 44</a></p>
+            </div>
+        </section>
+        <footer>
+            <div></div>
+            <p>© Copyright 2023 MiniStore. Design by <span>TemplatesJungle</span> Distribution by <span>ThemeWagon</span></p>
+        </footer>
+
+</div>
+    <section id="listNav" class="hidden">
+        <a class="navbar-brand" href="index.html">
+            <img src="./img/main-logo.png" class="logo" alt="Main Logo">
+        </a>
+        <div id="close" onclick="close()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <ul id="ulRes">
+            <a href="#" class="active"><li>HOME</li></a>
+            <a href="#"><li>SERVICES</li></a>
+            <a href="#"><li>PRODUCTS</li></a>
+            <a href="#"><li>WATCHES</li></a>
+            <a href="#"><li>SALE</li></a>
+            <a href="#"><li>BLOG</li></a>
+            <a href="#" class="toggle" onclick="disList2(); return false;">PAGES</a>
+                <div class="navyRes">
+                    <ul id="myList2" class="hidden">
+                        <li>ABOUT</li>
+                        <li>BLOG</li>
+                        <li>SHOP</li>
+                        <li>CART</li>
+                        <li>CHECKOUT</li>
+                        <li>SINGLE POST</li>
+                        <li>SINGLE PRODUCT</li>
+                        <li>CONTACT</li>
+                    </ul>
+                </div>
+        </ul>
+    </section>
+    <script src="miniStore.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
